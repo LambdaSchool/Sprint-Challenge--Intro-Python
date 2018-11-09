@@ -1,4 +1,4 @@
-#  Sprint Challenge: Intro to Python
+# Sprint Challenge: Intro to Python
 
 * Complete the programs in the `src/` directory in any order.
 
