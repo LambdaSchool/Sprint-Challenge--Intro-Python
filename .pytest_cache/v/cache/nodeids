@@ -1,0 +1,23 @@
+[
+  "src/cityreader/test_cityreader.py::CityreaderTests::test_cityreader_correctness",
+  "src/cityreader/test_stretch.py::CityreaderTests::test_cityreader_stretch_correctness",
+  "src/comp/test_comp.py::CompTests::test_ages_plus_10",
+  "src/comp/test_comp.py::CompTests::test_all_names_uppercase",
+  "src/comp/test_comp.py::CompTests::test_between_C_and_G",
+  "src/comp/test_comp.py::CompTests::test_ends_with_e",
+  "src/comp/test_comp.py::CompTests::test_name_hyphen_age",
+  "src/comp/test_comp.py::CompTests::test_names_ages_between_27_and_32",
+  "src/comp/test_comp.py::CompTests::test_square_root_of_ages",
+  "src/comp/test_comp.py::CompTests::test_starts_with_D",
+  "src/oop/test_oop1.py::Oop1Tests::test_airplane",
+  "src/oop/test_oop1.py::Oop1Tests::test_car",
+  "src/oop/test_oop1.py::Oop1Tests::test_flight_vehicle",
+  "src/oop/test_oop1.py::Oop1Tests::test_ground_vehicle",
+  "src/oop/test_oop1.py::Oop1Tests::test_motocycle",
+  "src/oop/test_oop1.py::Oop1Tests::test_starship",
+  "src/oop/test_oop2.py::Oop2Tests::test_ground_vehicle_drive",
+  "src/oop/test_oop2.py::Oop2Tests::test_ground_vehicle_num_wheels",
+  "src/oop/test_oop2.py::Oop2Tests::test_motocycle_num_wheels",
+  "src/oop/test_oop2.py::Oop2Tests::test_motorcycle_inheritance",
+  "src/oop/test_oop2.py::Oop2Tests::test_motorcyle_drive"
+]

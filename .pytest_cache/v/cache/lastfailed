@@ -1,0 +1,4 @@
+{
+  "src/cityreader/test_stretch.py::CityreaderTests::test_cityreader_stretch_correctness": true,
+  "src/comp/test_comp.py::CompTests::test_between_C_and_G": true
+}
