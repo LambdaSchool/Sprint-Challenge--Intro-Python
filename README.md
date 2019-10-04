@@ -7,13 +7,13 @@ In this week's Sprint you explored the Python programming language as well as ob
 
 This is an individual assessment. All work must be your own. Your challenge score is a measure of your ability to work independently using the material covered through this sprint. You need to demonstrate proficiency in the concepts and objectives introduced and practiced in the preceding days.
 
-You are not allowed to collaborate during the Sprint Challenge. However, you are encouraged to follow the twenty-minute rule and seek support from your PM and Instructor in your cohort help channel on Slack. Your submitted work reflects your proficiency in the concepts and topics that were covered this week.
+You are not allowed to collaborate during the Sprint Challenge. However, you are encouraged to follow the twenty-minute rule and seek support from your TL and Instructor in your cohort help channel on Slack. Your submitted work reflects your proficiency in the concepts and topics that were covered this week.
 
 You have three hours to complete this Sprint Challenge. Plan your time accordingly.
 
 ## Commits
 
-Commit your code regularly and meaningfully. This helps both you (in case you ever need to return to old code for any number of reasons) and it also helps your project manager to more thoroughly assess your work.
+Commit your code regularly and meaningfully. This helps both you (in case you ever need to return to old code for any number of reasons) and it also helps your team lead to more thoroughly assess your work.
 
 ## Description
 
@@ -43,7 +43,7 @@ In your solution, it is essential that you follow best practices and produce cle
 
 ## Stretch Problems
 
-The `cityreader` directory poses an stretch problem that builds upon the functionality you are to implement as part of the non-stretch requirements in the `cityreader` directory. 
+The `cityreader` directory poses a stretch problem that builds upon the functionality you are to implement as part of the non-stretch requirements in the `cityreader` directory. 
 
 There's a separate test file `test_stretch.py` for the stretch problem that you can run in order to test your implementation of the stretch problem.
 
