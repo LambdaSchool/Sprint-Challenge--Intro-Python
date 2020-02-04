@@ -13,7 +13,24 @@
 #
 # e.g.
 #
-# class Whatever:
-#     pass
-#
+class Vehicle:
+    pass
+
+class FlightVehicle:
+    pass
+
+class Starship:
+    pass
+
+class GroundVehicle(Vehicle):
+    pass
+
+class Airplane(FlightVehicle):
+    pass
+
+class Car(GroundVehicle):
+    pass
+
+class Motorcycle(GroundVehicle):
+    pass
 # Put a comment noting which class is the base class
