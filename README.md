@@ -9,6 +9,8 @@ This is an individual assessment. All work must be your own. Your challenge scor
 
 You are not allowed to collaborate during the Sprint Challenge. However, you are encouraged to follow the twenty-minute rule and seek support from your PM and Instructor in your cohort help channel on Slack. Your submitted work reflects your proficiency in the concepts and topics that were covered this week.
 
+
+
 You have three hours to complete this Sprint Challenge. Plan your time accordingly.
 
 ## Commits
