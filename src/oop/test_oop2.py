@@ -19,7 +19,7 @@ class Oop2Tests(unittest.TestCase):
     self.assertEqual(self.ground_vehicle.drive(), "vroooom")
 
   def test_motorcyle_drive(self):
-    self.assertEqual(self.motorcycle.drive(), "BRAAAP!!")
+    self.assertEqual(self.motorcycle.drive(), "BRAAAP!")
 
 
 if __name__ == '__main__':
