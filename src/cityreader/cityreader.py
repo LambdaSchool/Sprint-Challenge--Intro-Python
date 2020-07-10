@@ -1,6 +1,15 @@
 # Create a class to hold a city location. Call the class "City". It should have
 # fields for name, lat and lon (representing latitude and longitude).
 
+class City:
+  def __init__(self, name, lat, lon):
+    self.name = name
+    self.lat = lat
+    self.lon = lon
+
+  def __str__(self):
+    return f"{self.name}, {self.lat}, {self.lon}"
+
 
 # We have a collection of US cities with population over 750,000 stored in the
 # file "cities.csv". (CSV stands for "comma-separated values".)
@@ -14,20 +23,75 @@
 #
 # Note that the first line of the CSV is header that describes the fields--this
 # should not be loaded into a City object.
+
+import csv
+
 cities = []
 
 def cityreader(cities=[]):
   # TODO Implement the functionality to read from the 'cities.csv' file
   # For each city record, create a new City instance and add it to the 
   # `cities` list
+  PATH = "/Users/ekselan/Desktop/LAMBDA/CS-1/Sprint-Challenge--Intro-Python/src/cityreader/cities.csv"
+  with open(PATH, mode="r") as file:
+    # reading csv file
+    reader = csv.DictReader(file)
+
+    city_info = []
+
+    if len(cities) == 0:
+      # display contents of csv file
+      for row in reader:
+        obs = [row["city"], row["lat"], row["lng"]]
+        city_info.append(obs)
+        # city_info[0][0] == name
+        # city_info[0][1] == lat
+        # city_info[0][2] == lon
+
+      # loop into city_info list to create City() instances
+      for city in city_info:
+        instance = City(name=city[0], lat=float(city[1]),lon=float(city[2]))
+        cities.append(instance)
+  
+      return cities
+
+    # Added this if statement logic to solve issue of len(cityreader())
+    # increasing by 60 on each run inside breakpoint. Thought maybe that
+    # had something to do with unittest failing but it seemed to have
+    # no effect on the test. 
+    elif len(cities) > 0:
+      return cities
+
     
-    return cities
 
 cityreader(cities)
+print("-----" * 5)
+
+# breakpoint()
 
 # Print the list of cities (name, lat, lon), 1 record per line.
 for c in cities:
     print(c)
+print("-----" * 5)
+
+# breakpoint() #> Added breakpoint here to test some things and compare to 
+# test_cityreader.py ....
+
+# Getting result of failing test in line 82 in test_cityreader_correctness,
+# but everything I'm looking at shows me a matching list
+# Inside the breakpoint(), I can run len(cityreader()) with result 60 (stays
+# at 60 even on multiple attempts), and if I `print(cityreader()[0])` I get the
+# following result: Seattle, 47.6217, -122.3238
+# Similarly, `print(cityreader()[59])` returns the following result:
+# Portland, 45.5372, -122.6500
+# This appears to match the "exp" in the test file, so I do not understand
+# why it is still failing.
+# I also tested `print(cityreader()[60])` and returns `*** IndexError: list index out 
+# of range`, as expected. I've spent 45 minutes trying to find the discrepancy
+# with what my code does and what the test expects ...
+
+
+
 
 # STRETCH GOAL!
 #
