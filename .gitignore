@@ -1,3 +1,5 @@
 .vscode
 *.sw[op]
 __pycache__
+
+.DS_Store
